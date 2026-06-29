@@ -1,0 +1,131 @@
+{
+  "word_creator": {
+    "name": "word_creator",
+    "description": "Creates professional Word .docx documents with styled tables, embedded images, headings, and comparison sections. Reads data from context_data.json automatically.",
+    "task_types": [
+      "document"
+    ],
+    "capabilities": [
+      "create word document",
+      "add styled tables",
+      "embed images",
+      "professional headings",
+      "comparison tables",
+      "bullet lists"
+    ],
+    "input_schema": {
+      "title": "string — document main title",
+      "output_filename": "string — output file name (e.g. 'Report.docx'), saved under workspace/",
+      "context_data_path": "string — path to JSON context file (default: 'workspace/context_data.json')",
+      "images": "list of {path: str, caption: str} — images to embed (relative to workdir)",
+      "theme": "string — visual theme: 'premium_automotive' | 'default'",
+      "sections_override": "optional list of {heading, type, data_key} — override auto-detection"
+    },
+    "module": "tools/skill_registry/skills/word_creator.py",
+    "entry_function": "execute"
+  },
+  "image_generator": {
+    "name": "image_generator",
+    "description": "Generates AI images using the free Pollinations.ai API. No API key required. Supports logos, illustrations, and product renders.",
+    "task_types": [
+      "image_gen"
+    ],
+    "capabilities": [
+      "generate AI image",
+      "create logo",
+      "create illustration",
+      "download generated image"
+    ],
+    "input_schema": {
+      "prompts": "list of {prompt: str, filename: str, width: int, height: int} — images to generate"
+    },
+    "module": "tools/skill_registry/skills/image_generator.py",
+    "entry_function": "execute"
+  },
+  "data_processor": {
+    "name": "data_processor",
+    "description": "Reads and normalizes context_data.json. Removes raw web result noise (iteration_X keys), merges data from multiple search iterations, and returns a clean structured summary.",
+    "task_types": [
+      "data_analysis"
+    ],
+    "capabilities": [
+      "parse JSON",
+      "clean data",
+      "normalize context",
+      "merge search results",
+      "extract statistics"
+    ],
+    "input_schema": {
+      "context_data_path": "string — path to context_data.json",
+      "output_path": "string — where to save the cleaned data (default: same file)",
+      "fields_to_extract": "optional list of field names to extract specifically"
+    },
+    "module": "tools/skill_registry/skills/data_processor.py",
+    "entry_function": "execute"
+  },
+  "chart_creator": {
+    "name": "chart_creator",
+    "description": "Creates professional matplotlib charts (bar, line, pie, radar) from JSON data. Saves charts as PNG files for embedding in documents.",
+    "task_types": [
+      "utility"
+    ],
+    "capabilities": [
+      "create bar chart",
+      "create pie chart",
+      "create line chart",
+      "create comparison chart",
+      "save as PNG"
+    ],
+    "input_schema": {
+      "charts": "list of {title, chart_type, data_key, output_filename, xlabel, ylabel} — charts to create",
+      "context_data_path": "string — path to JSON data source"
+    },
+    "module": "tools/skill_registry/skills/chart_creator.py",
+    "entry_function": "execute"
+  },
+  "pdf_reader": {
+    "name": "pdf_reader",
+    "description": "Extracts and returns full text content from a PDF file page by page. Use when user uploads a PDF document for analysis, summarization, or data extraction.",
+    "task_types": [
+      "utility"
+    ],
+    "capabilities": [
+      "read pdf"
+    ],
+    "input_schema": {
+      "file_path": "string - path to pdf file"
+    },
+    "module": "tools/skill_registry/skills/pdf_reader.py",
+    "entry_function": "execute"
+  },
+  "excel_reader": {
+    "name": "excel_reader",
+    "description": "Reads tabular data from an Excel (.xlsx) file and returns it as a formatted text table (up to 250 rows). Use for Excel data analysis.",
+    "task_types": [
+      "utility"
+    ],
+    "capabilities": [
+      "read excel"
+    ],
+    "input_schema": {
+      "file_path": "string - path to excel file"
+    },
+    "module": "tools/skill_registry/skills/excel_reader.py",
+    "entry_function": "execute"
+  },
+  "csv_reader": {
+    "name": "csv_reader",
+    "description": "Reads tabular data from a CSV file and returns it as a formatted text table (up to 250 rows). Use for CSV data analysis.",
+    "task_types": [
+      "utility"
+    ],
+    "capabilities": [
+      "read csv"
+    ],
+    "input_schema": {
+      "file_path": "string - path to csv file"
+    },
+    "module": "tools/skill_registry/skills/csv_reader.py",
+    "entry_function": "execute"
+  }
+}

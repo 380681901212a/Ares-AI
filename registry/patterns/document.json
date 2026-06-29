@@ -1,0 +1,85 @@
+[
+  {
+    "task_type": "document",
+    "config": {
+      "title": "Samsung Galaxy S25 vs iPhone 16: Technical Specifications and Performance Comparison",
+      "output_filename": "Report_Samsung_Galaxy_S25_vs_iPhone_16.docx",
+      "context_data_path": "workspace/context_data.json",
+      "images": [
+        {
+          "path": "workspace/user_interface_screenshot_0.jpg",
+          "caption": "Real photos of Samsung Galaxy S25"
+        },
+        {
+          "path": "workspace/real_photos_of_Samsung_Ga_0.jpg",
+          "caption": "Real photos of Samsung Galaxy S25"
+        }
+      ],
+      "theme": "premium_automotive",
+      "sections_override": [
+        {
+          "heading": "Introduction",
+          "type": "text",
+          "data_key": "introduction_content"
+        },
+        {
+          "heading": "Technical Specifications",
+          "type": "text",
+          "data_key": "technical_specifications_content"
+        },
+        {
+          "heading": "Performance Comparison",
+          "type": "text",
+          "data_key": "performance_comparison_content"
+        },
+        {
+          "heading": "Conclusion",
+          "type": "text",
+          "data_key": "conclusion_content"
+        }
+      ]
+    },
+    "success_count": 3,
+    "code": "{\"title\": \"Comparison of Samsung Galaxy S25 and Apple iPhone 16\", \"output_filename\": \"Report_Samsung_Galaxy_S25_vs_iPhone_16.docx\", \"context_data_path\": \"workspace/context_data.json\", \"images\": [], \"theme\": \"premium_automotive\", \"sections_override\": [{\"heading\": \"Official Specifications\", \"type\": \"table\", \"data_key\": \"overview.details[0].content\"}, {\"heading\": \"Official Release Notes\", \"type\": \"list\", \"data_key\": \"overview.details[1].content\"}, {\"heading\": \"Detailed Feature Comparison\", \"type\": \"table\", \"data_key\": \"overview.details[2].content\"}]}"
+  },
+  {
+    "task_type": "document",
+    "config": {
+      "title": "Телефони Rozetka до 20 тис. грн.",
+      "output_filename": "workspace/phone_report.docx",
+      "context_data_path": "workspace/context_data.json",
+      "images": [],
+      "theme": "default",
+      "sections_override": [
+        {
+          "heading": "Доступні моделі телефонів",
+          "type": "text",
+          "data_key": "sections[0].content"
+        },
+        {
+          "heading": "Офера з знижками",
+          "type": "text",
+          "data_key": "sections[1].content"
+        },
+        {
+          "heading": "Опис та характеристики",
+          "type": "text",
+          "data_key": "sections[2].content"
+        },
+        {
+          "heading": "Відгуки та рецензії",
+          "type": "text",
+          "data_key": "sections[3].content"
+        },
+        {
+          "heading": "Доставка",
+          "type": "text",
+          "data_key": "sections[4].content"
+        }
+      ],
+      "images_disabled": true
+    },
+    "success_count": 1,
+    "code": "{\"title\": \"Телефони Rozetka до 20 тис. грн.\", \"output_filename\": \"workspace/phone_report.docx\", \"context_data_path\": \"workspace/context_data.json\", \"images\": [], \"theme\": \"default\", \"sections_override\": [{\"heading\": \"Доступні моделі телефонів\", \"type\": \"text\", \"data_key\": \"sections[0].content\"}, {\"heading\": \"Офера з знижками\", \"type\": \"text\", \"data_key\": \"sections[1].content\"}, {\"heading\": \"Опис та характеристики\", \"type\": \"text\", \"data_key\": \"sections[2].content\"}, {\"heading\": \"Відгуки та рецензії\", \"type\": \"text\", \"data_key\": \"sections[3].content\"}, {\"heading\": \"Доставка\", \"type\": \"text\", \"data_key\": \"sections[4].content\"}], \"images_disabled\": true}"
+  }
+]

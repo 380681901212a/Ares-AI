@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+main_env/
+sandbox_env/
+.venv/
+venv/
+env/
+
+# SECURITY — never commit secrets
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Temp files
+*.tmp
+*.log

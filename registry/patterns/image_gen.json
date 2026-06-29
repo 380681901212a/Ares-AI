@@ -1,0 +1,19 @@
+[
+  {
+    "task_type": "image_gen",
+    "config": {
+      "prompts": [
+        {
+          "prompt": "Generate a high-quality image of the Samsung Galaxy S25 based on real photos.",
+          "filename": "workspace/samsung_galaxy_s25.png"
+        },
+        {
+          "prompt": "Generate a high-quality image of the iPhone 16 based on real photos.",
+          "filename": "workspace/iphone_16.png"
+        }
+      ]
+    },
+    "success_count": 1,
+    "code": "{\"prompts\": [{\"prompt\": \"Generate a high-quality image of the Samsung Galaxy S25 based on real photos.\", \"filename\": \"workspace/samsung_galaxy_s25.png\"}, {\"prompt\": \"Generate a high-quality image of the iPhone 16 based on real photos.\", \"filename\": \"workspace/iphone_16.png\"}]}"
+  }
+]

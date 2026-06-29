@@ -1,0 +1,14 @@
+langchain
+langgraph
+langchain-ollama
+beautifulsoup4
+pydantic
+streamlit
+playwright
+python-dotenv
+requests
+pillow
+ddgs>=6.0
+pdfplumber>=0.10.0
+pandas>=2.0.0
+openpyxl>=3.1.0

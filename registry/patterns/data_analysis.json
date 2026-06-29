@@ -1,0 +1,11 @@
+[
+  {
+    "task_type": "data_analysis",
+    "config": {
+      "context_data_path": "workspace/context_data.json",
+      "output_path": "workspace/context_data.json"
+    },
+    "success_count": 4,
+    "code": "{\"context_data_path\": \"workspace/context_data.json\", \"output_path\": \"workspace/context_data.json\"}"
+  }
+]

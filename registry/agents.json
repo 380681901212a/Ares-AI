@@ -1,0 +1,20 @@
+[
+    {
+        "agent_name": "DataAnalyzer",
+        "agent_category": "data_analysis",
+        "agent_capabilities": [
+            "extract technical specifications",
+            "compare with BMW X5 and Mercedes GLE",
+            "fetch prices in Ukraine",
+            "retrieve image URLs"
+        ],
+        "system_prompt": "You are a DataAnalyzer, an expert in extracting and analyzing structured data. Your primary task is to read the workspace/context_data.json file, extract specific information such as technical specifications, comparison data with BMW X5 and Mercedes GLE, prices in Ukraine, and relevant image URLs. Ensure that all data extraction is done dynamically from the provided JSON file without hardcoding any placeholder data.",
+        "required_libraries": [
+            "json",
+            "os"
+        ],
+        "few_shot_examples": [
+            "```python\nimport json\nfrom docx import Document\nfrom docx.shared import Inches\nfrom docx.enum.text import WD_ALIGN_PARAGRAPH\n\ndef create_audi_q7_document():\n    # Load context data from JSON file\n    with open('workspace/context_data.json', 'r') as file:\n        context_data = json.load(file)\n\n    # Create a new Word document\n    doc = Document()\n\n    # Add AI logo of Audi\n    try:\n        doc.add_picture('workspace/AI_logo_of_Audi_0.jpg', width=Inches(1.5))\n    except Exception as e:\n        print(f'Error adding AI logo: {e}')\n\n    # Add title and style it\n    title = doc.add_paragraph('2022 Audi Q7 in Top Configuration')\n    title.alignment = WD_ALIGN_PARAGRAPH.CENTER\n    title.bold = True\n    title.italic = True\n\n    # Add technical specifications table\n    specs_table = doc.add_table(rows=1, cols=2)\n    specs_table.style = 'Table Grid'\n    hdr_cells = specs_table.rows[0].cells\n    hdr_cells[0].text = 'Specification'\n    hdr_cells[1].text = 'Value'\n\n    # Example technical specifications (replace with actual data from JSON)\n    spec_data = {\n        'Engine': '3.0 TFSI V6',\n        'Horsepower': '450 hp',\n        'Torque': '479 lb-ft',\n        'Transmission': '8-speed automatic',\n        'Drivetrain': 'quattro all-wheel drive',\n        'Fuel Economy (city/hwy)': '16/23 mpg',\n        'Dimensions (L/W/H)': '5,047/19.9/17.1 in'\n    }\n\n    for key, value in spec_data.items():\n        row_cells = specs_table.add_row().cells\n        row_cells[0].text = key\n        row_cells[1].text = value\n\n    # Add comparison with BMW X5 and Mercedes GLE\n    doc.add_heading('Comparison with BMW X5 and Mercedes GLE', level=2)\n\n    # Example comparison data (replace with actual data from JSON)\n    comparison_data = {\n        'Engine': {'Audi Q7': '3.0 TFSI V6', 'BMW X5': '4.4-liter twin-turbo V8', 'Mercedes GLE': '4.0-liter twin-turbo V8'},\n        'Horsepower': {'Audi Q7': '450 hp', 'BMW X5': '530 hp', 'Mercedes GLE': '560 hp'},\n        'Torque': {'Audi Q7': '479 lb-ft', 'BMW X5': '550 lb-ft', 'Mercedes GLE': '580 lb-ft'},\n        'Price in Ukraine (UAH)': {'Audi Q7': '12,000,000 UAH', 'BMW X5': '14,000,000 UAH', 'Mercedes GLE': '13,500,000 UAH'}\n    }\n\n    for key, values in comparison_data.items():\n        doc.add_paragraph(f'{key}:')\n        for brand, value in values.items():\n            doc.add_paragraph(f'  {brand}: {value}')\n\n    # Add prices in Ukraine\n    doc.add_heading('Prices in Ukraine', level=2)\n    price_data = comparison_data['Price in Ukraine (UAH)']\n    for brand, price in price_data.items():\n        doc.add_paragraph(f'{brand}: {price}')\n\n    # Add images of Audi Q7\n    image_paths = [\n        'workspace/Real_photos_of_Audi_Q7_20_0.jpg',\n        'workspace/Real_photo_of_Audi_Q7_202_0.jpg',\n        'workspace/Real_photos_of_2022_Audi_1.jpg',\n        'workspace/Real_photos_of_2022_Audi_2.jpg'\n    ]\n\n    for path in image_paths:\n        try:\n            doc.add_picture(path, width=Inches(6))\n        except Exception as e:\n            print(f'Error adding image {path}: {e}')\n\n    # Save the document\n    doc.save('workspace/Audi_Q7_2022_Report.docx')\n    print('Document created successfully.')\n\ncreate_audi_q7_document()\n```"
+        ]
+    }
+]

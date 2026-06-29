@@ -1,0 +1,156 @@
+==========================================
+Starting Ares AI Ecosystem...
+Make sure Ollama is running in the background!
+==========================================
+Starting SearxNG Docker container...
+searxng
+Installing/Updating dependencies from requirements.txt...
+
+[notice] A new release of pip is available: 24.0 -> 26.1.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+Launching UI...
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.28.68:8501
+
+
+============================================================
+🚀 ARES AI v2.0 — RUN STARTING
+TASK: Зроби порівняльний аналіз смартфонів Samsung Galaxy S25 та iPhone 16
+============================================================
+✅ [NODE FINISHED]: CORE
+✅ [NODE FINISHED]: REQUIREMENTS
+✅ [NODE FINISHED]: CORE
+🔎 [Searcher] LLM Iteration 1/6 - Analyzing search needs...
+🔎 [Searcher] Searching web for 5 text queries...
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 rozetka.com.ua information
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 hotline.ua information
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 jabko.ua information
+
+[SEARXNG LOCAL] Searching for: iPhone 16 rozetka.com.ua information
+
+[SEARXNG LOCAL] Searching for: iPhone 16 hotline.ua information
+🔎 [Searcher] LLM Iteration 2/6 - Analyzing search needs...
+🔎 [Searcher] Searching web for 4 text queries...
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 official specifications wiki
+
+[SEARXNG LOCAL] Searching for: iPhone 16 technical details forum
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 vs iPhone 16 benchmark tests
+
+[SEARXNG LOCAL] Searching for: user reviews Samsung Galaxy S25 and iPhone 16
+🔎 [Searcher] LLM Iteration 3/6 - Analyzing search needs...
+🔎 [Searcher] Searching web for 4 text queries...
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 official specs wiki
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 vs iPhone 16 software updates comparison
+
+[SEARXNG LOCAL] Searching for: user reviews Samsung Galaxy S25 and iPhone 16 on techradar
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 vs iPhone 16 pricing in Ukraine
+🔎 [Searcher] LLM Iteration 4/6 - Analyzing search needs...
+🔎 [Searcher] Searching web for 4 text queries...
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 official specifications and release notes
+
+[SEARXNG LOCAL] Searching for: iPhone 16 technical documentation and user guides
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 vs iPhone 16 pricing comparison in Ukraine with local offers
+
+[SEARXNG LOCAL] Searching for: user feedback and reviews on Samsung Galaxy S25 and iPhone 16 from Ukrainian tech forums
+🔎 [Searcher] LLM Iteration 5/6 - Analyzing search needs...
+🔎 [Searcher] Searching web for 3 text queries...
+
+[SEARXNG LOCAL] Searching for: iPhone 16 technical documentation and user guides in English
+
+[SEARXNG LOCAL] Searching for: comparison of Samsung Galaxy S25 and iPhone 16 on tech forums Ukraine
+
+[SEARXNG LOCAL] Searching for: local pricing comparison for Samsung Galaxy S25 and iPhone 16 in Ukrainian markets
+🔎 [Searcher] LLM Iteration 6/6 - Analyzing search needs...
+🔎 [Searcher] Searching web for 3 text queries...
+
+[SEARXNG LOCAL] Searching for: iPhone 16 user guides and manuals in English
+
+[SEARXNG LOCAL] Searching for: comparison of Samsung Galaxy S25 and iPhone 16 camera performance on tech forums Ukraine
+
+[SEARXNG LOCAL] Searching for: local pricing comparison for Samsung Galaxy S25 and iPhone 16 in Ukrainian markets with seller links
+✅ [NODE FINISHED]: SEARCHER
+✅ [NODE FINISHED]: INFO_CHECKER
+✅ [NODE FINISHED]: CLARIFIER
+✅ [NODE FINISHED]: CORE
+🔎 [Searcher] LLM Iteration 1/6 - Analyzing search needs...
+🔎 [Searcher] Searching web for 5 text queries...
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 rozetka.com.ua information
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 hotline.ua information
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 jabko.ua information
+
+[SEARXNG LOCAL] Searching for: iPhone 16 rozetka.com.ua information
+
+[SEARXNG LOCAL] Searching for: iPhone 16 hotline.ua information
+🔎 [Searcher] LLM Iteration 2/6 - Analyzing search needs...
+🔎 [Searcher] Searching web for 4 text queries...
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 official specs wiki
+
+[SEARXNG LOCAL] Searching for: iPhone 16 official documentation release notes
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 vs iPhone 16 user reviews tech forums
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 and iPhone 16 benchmark tests comparisons
+🔎 [Searcher] LLM Iteration 3/6 - Analyzing search needs...
+🔎 [Searcher] Searching web for 3 text queries...
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 vs iPhone 16 official specs comparison
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 pricing and offers in Ukraine
+
+[SEARXNG LOCAL] Searching for: user reviews of Samsung Galaxy S25 and iPhone 16 on tech forums
+🔎 [Searcher] LLM Iteration 4/6 - Analyzing search needs...
+🔎 [Searcher] Searching web for 3 text queries...
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 pricing in Ukraine
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 user reviews on tech forums
+
+[SEARXNG LOCAL] Searching for: Benchmark tests comparing Samsung Galaxy S25 and iPhone 16
+🔎 [Searcher] LLM Iteration 5/6 - Analyzing search needs...
+🔎 [Searcher] Searching web for 4 text queries...
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 official specs comparison iPhone 16
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 vs iPhone 16 expert reviews
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 and iPhone 16 benchmark tests
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 user feedback on tech forums
+🔎 [Searcher] LLM Iteration 6/6 - Analyzing search needs...
+🔎 [Searcher] Searching web for 5 text queries...
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 vs iPhone 16 pricing in Ukraine
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 vs iPhone 16 expert reviews and analysis
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 vs iPhone 16 user feedback on tech forums
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 vs iPhone 16 detailed benchmark tests
+
+[SEARXNG LOCAL] Searching for: Samsung Galaxy S25 vs iPhone 16 release notes and official documentation
+✅ [NODE FINISHED]: SEARCHER
+✅ [NODE FINISHED]: INFO_CHECKER
+✅ [NODE FINISHED]: CLARIFIER
+[Core] Max search cycles reached, but data quality is critical. Stopping.
+✅ [NODE FINISHED]: CORE
+============================================================
+🏁 EXECUTION COMPLETE OR WAITING FOR HUMAN
+============================================================
+
